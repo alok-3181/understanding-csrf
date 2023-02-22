@@ -4,8 +4,6 @@
 
 So here's a quick run down!
 
-Read this and still have questions? Want to tell us we're wrong? Open an issue!
-
 ## How does a CSRF attack work?
 
 On their own (phishing site), an attacker could create an AJAX button or form that creates a request against your site:
@@ -51,7 +49,7 @@ For example, you could not load sessions if the referrer header is not your serv
 Make sure that none of your `GET` requests change any relevant data in your database.
 This is a very novice mistake to make and makes your app susceptible to more than just CSRF attacks.
 
-### Avoid using POST
+### Avoid using GET
 
 Because `<form>`s can only `GET` and `POST`,
 by using other methods like `PUT`, `PATCH`, and `DELETE`,
